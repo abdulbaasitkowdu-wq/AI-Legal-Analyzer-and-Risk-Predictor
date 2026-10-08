@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Production build (regenerate with npm run build)
+frontend/build/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+.eggs/
+
+# Env & secrets (keep .env.example)
+.env
+backend/.env
+frontend/.env
+frontend/.env.local
+backend/credentials.json
+backend/token.json
+
+# Google Calendar OAuth (backend)
+backend/token.json
+backend/credentials.json
+
+# Chat uploads (PDFs / images)
+backend/uploads/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

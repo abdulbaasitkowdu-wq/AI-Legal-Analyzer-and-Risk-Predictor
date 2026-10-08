@@ -1,0 +1,16 @@
+{
+  "name": "ai-legal-analyzer",
+  "version": "1.0.0",
+  "description": "AI Legal Analyzer and Risk Predictor",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000",
+    "frontend": "cd frontend && npm start",
+    "setup": "setup.bat",
+    "install-all": "npm install && cd backend && python -m pip install -r requirements.txt && cd ../frontend && npm install && cd .."
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

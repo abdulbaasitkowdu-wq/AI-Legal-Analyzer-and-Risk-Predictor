@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Site-wide dark mode (Tailwind darkMode: 'class' on <html>) */
+@layer base {
+  html.dark {
+    color-scheme: dark;
+  }
+}
+
+@layer components {
+  /* Common light surfaces → dark */
+  html.dark .bg-white {
+    @apply bg-gray-800;
+  }
+  html.dark .bg-gray-50 {
+    @apply bg-gray-900;
+  }
+  html.dark .bg-slate-50 {
+    @apply bg-gray-900;
+  }
+  html.dark .bg-slate-100 {
+    @apply bg-gray-800;
+  }
+  html.dark .bg-red-50 {
+    @apply bg-red-950/40;
+  }
+  html.dark .bg-blue-50 {
+    @apply bg-blue-950/40;
+  }
+  html.dark .bg-green-50 {
+    @apply bg-green-950/40;
+  }
+  html.dark .bg-amber-50 {
+    @apply bg-amber-950/40;
+  }
+
+  html.dark .border-gray-100,
+  html.dark .border-gray-200 {
+    @apply border-gray-700;
+  }
+  html.dark .border-slate-100,
+  html.dark .border-slate-200 {
+    @apply border-gray-700;
+  }
+  html.dark .border-blue-100 {
+    @apply border-gray-700;
+  }
+
+  html.dark .text-slate-900 {
+    @apply text-gray-100;
+  }
+  html.dark .text-slate-800 {
+    @apply text-gray-100;
+  }
+  html.dark .text-slate-700 {
+    @apply text-gray-200;
+  }
+  html.dark .text-slate-600 {
+    @apply text-gray-300;
+  }
+  html.dark .text-slate-500 {
+    @apply text-gray-400;
+  }
+  html.dark .text-gray-800 {
+    @apply text-gray-100;
+  }
+  html.dark .text-gray-700 {
+    @apply text-gray-200;
+  }
+  html.dark .text-gray-600 {
+    @apply text-gray-300;
+  }
+  html.dark .text-gray-500 {
+    @apply text-gray-400;
+  }
+
+  html.dark input,
+  html.dark textarea,
+  html.dark select {
+    @apply bg-gray-800 border-gray-600 text-gray-100 placeholder-gray-500;
+  }
+}
